@@ -17,7 +17,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter testing',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          brightness: Brightness.light,
+          primarySwatch: Colors.green,
+          appBarTheme: const AppBarTheme(
+            elevation: 10,
+            titleTextStyle: TextStyle(
+              fontFamily: 'LeckerliOne',
+              fontSize: 24,
+            ),
+          ),
         ),
         home: const ECommerceScreen());
   }
